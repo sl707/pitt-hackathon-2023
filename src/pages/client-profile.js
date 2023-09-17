@@ -66,13 +66,23 @@ const ProfilePage = (props) => {
           <img src={pfpUrl} alt={pfpUrl} width="450px" height="350px" objectFit="cover"/>
         </div>
         <div style={{display: 'flex', flexDirection: "column", width: '450px'}}>
+        <div class="form-group">
+            <label for="mi-1">Sex</label>
+            <input
+              type="text"
+              class="form-control main-border"
+              id="mi20"
+              value={sex}
+              disabled
+            />
+          </div>
           <div class="form-group">
             <label for="mi20">Date of Birth</label>
             <input
               type="text"
               class="form-control main-border"
               id="mi20"
-              value={sex}
+              value={DOB}
               disabled
             />
           </div>
@@ -107,7 +117,7 @@ const ProfilePage = (props) => {
             />
           </div>
           <div class="form-group">
-            <label for="mi24">Energency Contact Information</label>
+            <label for="mi24">Emergency Contact Information</label>
             <input
               type="text"
               class="form-control main-border"
