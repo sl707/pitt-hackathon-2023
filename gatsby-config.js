@@ -25,6 +25,23 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-source-mongodb',
+      options: {
+        dbName: 'Cluster0',
+        collection: ['pfp', 'docs', 'accounts'],
+        connectionString: 'mongodb+srv://asdf:asdf@test.yvejd44.mongodb.net',
+        extraParams: {
+          retryWrites: true,
+          w: 'majority'
+        },
+        auth: {
+          user: 'asdf',
+          password: 'asdf'
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

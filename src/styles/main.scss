@@ -1,0 +1,40 @@
+$main-color: #0e1e7f;
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: white !important;
+  border-color: $main-color !important;
+  color: #000000 !important;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+  background-color: $main-color !important;
+  border-color: $main-color !important;
+  color: white !important;
+}
+
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:visited {
+  background-color: #7f0e0e !important;
+  border-color: #7f0e0e !important;
+  color: white !important;
+}
+
+.main-border {
+  border-color: $main-color !important;
+}
+
+.max-width-dropdown {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+.max-width-dropdown-element {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
